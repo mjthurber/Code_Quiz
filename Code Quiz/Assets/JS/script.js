@@ -94,6 +94,7 @@ function finishQuiz() {
 
 function submitScore() {
     const initials = prompt('Enter your initials');
+    scoreList.removeAttribute("hidden");
     if (initials !== null && initials !== '') {
         const scoreData = {
             initials: initials,
